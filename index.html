@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Animation found out @ http://www.thismanslife.co.uk/ -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bok Vacation</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+        }
+
+        body {
+            /* background-color: #ff6148; */
+            /* background: url(/img/a18.jpg); */
+            background-color: #000000;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all .5s ease;
+        }
+
+        h1 {
+            color: rgb(102, 12, 114);
+            text-decoration: none;
+            /* text-transform: uppercase; */
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            /* text-transform: uppercase; */
+            letter-spacing: 36px;
+            font-size: 64px;
+            line-height: 96px;
+            width: 1024px;
+            margin: -50px 0 0 -500px;
+            text-align: center;
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            transition: all .3s cubic-bezier(.7, 0, .3, 1);
+
+        }
+
+        a {
+            color:  rgb(102, 12, 114);
+            /* text-shadow:  0 0 10px rgb(255, 255, 255); */
+            text-decoration: none;
+            /* text-transform: uppercase; */
+            display: inline-block;
+            transition: all .3s cubic-bezier(.7, 0, .3, 1);
+        }
+
+        a:hover {
+            transform: scale(1.05);
+            letter-spacing: 40px;
+            transition: transform .2s cubic-bezier(0.19, 1, 0.22, 1), letter-spacing 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        a:active {
+            transform: scale(0.95);
+            letter-spacing: 12px;
+            transition: transform .05s cubic-bezier(0.19, 1, 0.22, 1), letter-spacing .3s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        #holder {
+            width: 800px;
+            height: 800px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -410px 0 0 -400px;
+            opacity: .99;
+        }
+
+        #arcs {
+            width: 800px;
+            height: 800px;
+        }
+
+        @keyframes spinit {
+            0% {
+                transform: rotate(0)
+            }
+            49% {
+                transform: rotate(180deg)
+            }
+            51% {
+                transform: rotate(180deg)
+            }
+            100% {
+                transform: rotate(0)
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 4px;
+            margin: 0;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 18px;
+            border-color: #c7c8b8 transparent transparent #c7c8b8;
+            animation-name: spinit;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(.7, 0, .3, 1);
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            #content {
+                transform: scale(.7);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #content {
+                transform: scale(.5);
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            #content {
+                margin-top: -70px;
+            }
+            h1 {
+                font-size: 20px;
+                margin-top: 480px;
+            }
+            a {letter-spacing: 20px;}
+            a:hover {letter-spacing: 22px;}
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="content">
+        <h1><a href="landing.html">Vacation2020</a></h1>
+        <div id="holder">
+            <div id="arcs">
+                <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            <span>
+            </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(myURL, 10000);
+        function myURL(){
+            location.href = '/landing.html'
+        }
+    </script>
+
+</body>
+
+</html>
+
