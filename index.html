@@ -1,195 +1,128 @@
-<!DOCTYPE HTML>
-<html>
-<!-- Animation found out @ http://www.thismanslife.co.uk/ -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Bok Vacation</title>
-    <style type="text/css">
-        html,
-        body {
-            margin: 0;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Copy | Vacation Parallax Effects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/landing-page.css">
+    <link rel="stylesheet" href="/assets/css/image-page.css">
+    <script defer src="/assets/js/scripts.js"></script>
 
-        body {
-            /* background-color: #ff6148; */
-            /* background: url(/img/a18.jpg); */
-            background-color: #000000;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #fff;
-            overflow: hidden;
-        }
+        <!-- 
+    This was built by ....
+        
+    |#|	 |#|	/######\  |#|  |#|   /######\
+    |#|  |#|	|#|  |#|  |#|  |#| 	 |#|
+    |######|	|######|  |#|  |#| 	 \######\ 
+    |#|	 |#|	|#|  |#|  |#|  |#|        |#| 		
+    |#|	 |#|	|#|  |#|  \######/   |######/ 
 
-        * {
-            box-sizing: border-box;
-        }
-
-        #content {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            transition: all .5s ease;
-        }
-
-        h1 {
-            color: rgb(102, 12, 114);
-            text-decoration: none;
-            /* text-transform: uppercase; */
-            font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            /* text-transform: uppercase; */
-            letter-spacing: 36px;
-            font-size: 64px;
-            line-height: 96px;
-            width: 1024px;
-            margin: -50px 0 0 -500px;
-            text-align: center;
-            position: absolute;
-            z-index: 100;
-            top: 50%;
-            left: 50%;
-            transition: all .3s cubic-bezier(.7, 0, .3, 1);
-
-        }
-
-        a {
-            color:  rgb(102, 12, 114);
-            text-shadow:  0 0 10px rgb(255, 255, 255);
-            text-decoration: none;
-            /* text-transform: uppercase; */
-            display: inline-block;
-            transition: all .3s cubic-bezier(.7, 0, .3, 1);
-        }
-
-        a:hover {
-            transform: scale(1.05);
-            letter-spacing: 40px;
-            transition: transform .2s cubic-bezier(0.19, 1, 0.22, 1), letter-spacing 1.4s cubic-bezier(0.19, 1, 0.22, 1);
-        }
-
-        a:active {
-            transform: scale(0.95);
-            letter-spacing: 12px;
-            transition: transform .05s cubic-bezier(0.19, 1, 0.22, 1), letter-spacing .3s cubic-bezier(0.19, 1, 0.22, 1);
-        }
-
-        #holder {
-            width: 800px;
-            height: 800px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -410px 0 0 -400px;
-            opacity: .99;
-        }
-
-        #arcs {
-            width: 800px;
-            height: 800px;
-        }
-
-        @keyframes spinit {
-            0% {
-                transform: rotate(0)
-            }
-            49% {
-                transform: rotate(180deg)
-            }
-            51% {
-                transform: rotate(180deg)
-            }
-            100% {
-                transform: rotate(0)
-            }
-        }
-
-        span {
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 4px;
-            margin: 0;
-            box-sizing: border-box;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 18px;
-            border-color: #c7c8b8 transparent transparent #c7c8b8;
-            animation-name: spinit;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: cubic-bezier(.7, 0, .3, 1);
-        }
-
-        @media screen and (max-width: 1024px) {
-
-            #content {
-                transform: scale(.7);
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-
-            #content {
-                transform: scale(.5);
-            }
-        }
-
-        @media screen and (max-width: 540px) {
-            #content {
-                margin-top: -70px;
-            }
-            h1 {
-                font-size: 20px;
-                margin-top: 480px;
-            }
-            a {letter-spacing: 20px;}
-            a:hover {letter-spacing: 22px;}
-        }
-
-    </style>
-
+    I hope you enjoy!
+    -->
+    
 </head>
-
 <body>
-    <div id="content">
-        <h1><a href="landing.html">Vacation2020</a></h1>
-        <div id="holder">
-            <div id="arcs">
-                <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            <span>
-            </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
-                </span>
+    
+    <section id="section-home">
+        <img src="/assets/img/bg.jpg" id="bg" alt="">
+        <img src="/assets/img/moon.png" id="moon" alt="">
+        <img src="/assets/img/mountain.png" id="mountain" alt="">
+        <img src="/assets/img/road.png" id="road" alt="">
+        <h2 id="text">Vacation 2020</h2>
+    </section>
+
+    <nav>
+        <div class="topnav">
+            <!-- <a class="active nav-select" href="#home">Home</a> -->
+            <a class="nav-select" href="#facts">Facts</a>
+            <a class="nav-select" href="#pictures">Pictures</a>
+            <a class="nav-select" href="#contact">Message</a>
+        </div>
+    </nav>
+
+    <div class="main-body-section">
+
+        <div class="container_one">
+            <div class="float-container-header">
+                <h2 class="all-headers" >Facts:</h2>
+            </div>
+            
+            <div class="float-container" id="facts">
+                <p>This gallery holds our highlighted pictures from this summer's tour of the west. </p>
+
+                <ul>
+                    <li>Drove = 2554 miles</li>
+                    <li>Hiked = 75 miles</li>
+                    <li>One accident (van vs antelope)</li>
+                    <li>Camped in four, visited five national parks (Rocky Mountain, Grand Tetons, Yellowstone, Glacier and Badlands)</li>
+                    <li>3 showers in 14 days (showers at parks were closed)... We found streams and lakes to swim 🤪</li>
+                    <li>We saw one bear.</li>
+                    <li>I enjoyed Every... Single... Minute with my family.</li>
+                    <li>And we came home with the same number we started with.</li>
+                </ul>
+                We hope you enjoy!
+                  
+                <br><br>
+            </div>
+        </div>
+    
+        <div class="container_two">
+            <div class="float-container-header" >
+                <h2 class="all-headers" >Picture Links:</h2>
+            </div>
+            
+            <div class="float-container" id="pictures">
+                <ul>
+                    <li><a href="7-11-2020.html">7/11/2020 - Day 1 (Flying to Denver)</a></li>
+                    <li><a href="7-12-2020.html">7/12/2020 - Day 2 (Rocky Mtn National Park, Independence Rock)</a></li>
+                    <li><a href="7-13-2020.html">7/13/2020 - Day 3 (Grand Tetons Jackson Hole, WY)</a></li>
+                    <li><a href="7-14-2020.html">7/14/2020 - Day 4 (Yellowstone)</a></li>
+                    <li><a href="7-15-2020.html">7/15/2020 - Day 5 (Yellowstone)</a></li>
+                    <li><a href="7-16-2020.html">7/16/2020 - Day 6 (Yellowstone)</a></li>
+                    <li><a href="7-17-2020.html">7/17/2020 - Day 7 (Glacier)</a></li>
+                    <li><a href="7-18-2020.html">7/18/2020 - Day 8 (Glacier)</a></li>
+                    <li><a href="7-19-2020.html">7/19/2020 - Day 9 (Glacier)</a></li>
+                    <li><a href="7-20-2020.html">7/20/2020 - Day 10 (Glacier)</a></li>
+                    <li><a href="7-21-2020.html">7/21/2020 - Day 11 (Badlands)</a></li>
+                    <li><a href="7-22-2020.html">7/22/2020 - Day 12 (Badlands)</a></li>
+                    <li><a href="7-23-2020.html">7/23/2020 - Day 13 (Rocky Mtn National Park)</a></li>
+                    <li><a href="7-24-2020.html">7/24/2020 - Day 14 (Rocky Mtn National Park / Denver)</a></li>
+                    <li><a href="7-25-2020.html">7/25/2020 - Day 15 (Denver)</a></li>
+                    <br><br>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container_three">
+            <!-- <div class="float-container-header" id="contact">
+                <h2 class="all-headers">Message Us</h2>
+            </div>
+             -->
+            <div class="float-container-message" id="contact">
+                <div class="cognito">
+                    <script src="https://www.cognitoforms.com/s/hqHMGIhQC0aHPyBj4ydFNA"></script>
+                    <script>
+                        Cognito.load("forms", { id: "1" });
+                    </script>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        setTimeout(myURL, 10000);
-        function myURL(){
-            location.href = '/landing.html'
-        }
-    </script>
+    <!-- Footer Return to Main Page -->
+    <div class="return-home-footer">
+    
+        <div class="copyright">
+            <i>bokHaus &#169 2020</i>
+        </div>
+        
+        <div class="counter">
+                <!-- hitwebcounter Code START -->
+            <a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter3.stat.ovh/private/freecounterstat.php?c=1p74q7gb45axf3r35pb23qb35drl6wt9" border="0" title="website counter" alt="website counter"></a>
+        </div>
 
+    </div>
+    <!-- End of Footer -->
+       
 </body>
-
-</html>
-
+</html> 
