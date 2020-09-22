@@ -124,6 +124,22 @@ section img {
     /* border-bottom: 2px solid red; */
 } 
 
+#facts ul {
+    color: #ADCDE6;
+}
+
+#facts h4 {
+    text-transform: uppercase;
+}
+
+#pictures ul{
+    list-style-type: none;
+}
+
+#pictures a {
+    color: #ADCDE6;
+}
+
 .all-headers {
     float: right;
     font-size: 60px;

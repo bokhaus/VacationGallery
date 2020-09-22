@@ -21,10 +21,9 @@ i {
   margin: 50px 0px 0px 0px;
 }
 
-/* Landing Page */
+/* Image Page */
 .container-1 {
     /* border: 3px solid #B03D42; */
-    /* border-bottom: 2px solid rgba(255,255,255,.4); */
     background: #000000;
     /* color: rgba(255,255,255,.4); */
     color: #C03028;
@@ -57,7 +56,7 @@ i {
 
 marquee {
   height: 60px;
-  background-image: url(/img/redMountains.jfif);
+  background-image: url(/assets/img/mountain-landscapes-red.jpg);
   /* background-image: url(/img/mountain-landscapes.jpg); */
   background-size: contain;
   background-color: black;
@@ -69,7 +68,7 @@ marquee img{
 }
 
 .narrative {
-    background-image: url(/img/mudpots.gif);
+    background-image: url(/assets/img/mudpots.gif);
     background-size: cover;
     border-radius: 10px;
     height: 525px;
@@ -79,7 +78,7 @@ marquee img{
     margin: 10px;
     padding: 5px 15px 0 5px;
   }
-/*   
+  
 .transbox {
     align-content: center;
     display: flexbox;
@@ -94,7 +93,7 @@ marquee img{
 
 .transbox p {
   color: #f2f2f2;
-} */
+}
 
 .container-2 {
     align-items: center;
@@ -168,7 +167,8 @@ marquee img{
     margin: 0 0 0 15%;
 }
 .today {
-    color: #B03D42;
+    color: #285475;
+    /* color: #B03D42; */
     text-align: left;
 }
 
@@ -191,6 +191,7 @@ marquee img{
 .return-home-footer {
     background-color: #000000;
     /* border: 2px dotted green; */
+    position: sticky;
     display: flex;
     font-family: sans-serif;
     justify-content: center;
@@ -219,7 +220,8 @@ marquee img{
 }
 
 .return-home-footer .home {
-    background-color: #B03D42;
+    /* background-color: #B03D42; */
+    background-color: #285475;;
     color: white;
     margin: 0 5px 0 5px;
 }
