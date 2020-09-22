@@ -155,8 +155,20 @@ section img {
 } 
 
 /*Footer on Landing page copyright and counter*/
-
-.copyright {
+.return-home-footer-index {
+    background-color: #000000;
+    /* border: 2px dotted green; */
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: min-content;
+    z-index: 1;
+    /* padding: 5px;
+    margin: 15px 0 0 0; */
+}
+.copyright-index {
     float: left;
     width: 50%;
     color: rgb(84, 87, 87);
@@ -164,18 +176,18 @@ section img {
     /* border: 3px solid #73AD21; */
 }
 
-.copyright i{
+.copyright-index i{
     color: #285475;
     font-size: 23px;
 }
 
-.counter {
+.counter-index {
     float: left;
     width: 10%;
     /* border: 3px solid #73AD21; */
 }
 
-.counter img {
+.counter-index img {
     float: right;
     /* width: 13%; */
     padding: 5px;
