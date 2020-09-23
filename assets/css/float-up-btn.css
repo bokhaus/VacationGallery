@@ -1,0 +1,41 @@
+/*-- Styles your button (this is a black square with white text) */
+
+.back-to-top {
+    background-color: #285475;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    z-index: 999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+/* .back-to-top a */
+
+a.back-to-top {
+    /* font-weight: 1000; */
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    padding-top: 13px;
+    padding-left: 5px;
+    /* transform: rotate(90deg) */
+}
+
+.back-to-top:hover {
+    background-color: #FFFFFF;
+    color: #285475;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
