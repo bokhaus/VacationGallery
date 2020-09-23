@@ -16,6 +16,20 @@ window.addEventListener('scroll', function(){
     text.style.left = -value * 0.7 + 'px';
 });
 
+//Arrow Key navigation for lightbox -Arrow key detection
+document.body.addEventListener('keydown', function(event) {
+  var key = event.key;
+
+  switch (key) { 
+    case "ArrowLeft":
+      plusSlides(-1); 
+      break; 
+  case "ArrowRight": 
+      plusSlides(1); 
+      break; 
+  } 
+}); 
+
 // Float-up button - Scrolls to Top
 var link = document.getElementById("back-to-top");
   var amountScrolled = 250;
@@ -39,7 +53,7 @@ var link = document.getElementById("back-to-top");
           if (window.pageYOffset <= document.body.offsetTop) {
               clearInterval(runAnimation);
           }
-      };
+      }
       // Loop the animation function
       var runAnimation = setInterval(animateScroll, 16);
   });
@@ -70,7 +84,7 @@ function openModal() {
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
     if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n < 1) {slideIndex = slides.length;}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -83,35 +97,5 @@ function openModal() {
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-  //Arrow Key navigation for lightbox 
-  document.body.addEventListener('keydown', function(event) {
-    const key = event.key;
 
-    switch (key) { 
-      case "ArrowLeft":
-        plusSlides(-1); 
-        break; 
-    case "ArrowRight": 
-        plusSlides(1); 
-        break; 
-    } 
-}); 
 
-// document.body.addEventListener('keydown', function(event) {
-//     const key = event.key; 
-
-//     switch (key) { 
-//         case 37: 
-//             plusSlides(-1); 
-//             break; 
-//         case 38: 
-//             str = 'Up Key pressed!'; 
-//             break; 
-//         case 39: 
-//             plusSlides(1); 
-//             break; 
-//         case 40: 
-//             str = 'Down Key pressed!'; 
-//             break; 
-//     } 
-// });

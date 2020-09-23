@@ -94,12 +94,6 @@ section img {
 }
 
 /* main-body-section */
-.main-body-section {
-    background-image: url(/assets/img/backgroundBlack2Blue.jpg);
-    background-size: cover;
-    /* background-color: black; */
-}
-
 .float-container-header {
     color: #285475;
     width: 35%;
