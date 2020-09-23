@@ -249,6 +249,7 @@ marquee img{
 }
   
 .column {
+  display: none;
   float:left;
   width: 15%;
   margin: 15px;
