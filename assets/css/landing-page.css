@@ -183,8 +183,11 @@ section img {
 
 .counter-index img {
     float: right;
-    /* width: 13%; */
     padding: 5px;
     /* border: 3px solid #d84012; */
+}
+
+.counter-index i {
+    border: 3px solid #d84012;
 }
 
