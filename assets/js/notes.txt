@@ -1,2 +1,8 @@
 Colors:
-    
+
+
+Punctuation
+    ( &#040;
+    ) &#041;
+    - &#151;
+    cross &#134;
