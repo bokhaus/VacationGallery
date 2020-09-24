@@ -30,7 +30,7 @@ a.back-to-top {
     /* transform: rotate(90deg) */
 }
 
-.back-to-top:hover {
+.back-to-top::hover {
     background-color: #FFFFFF;
     color: #285475;
     font-weight: 1000;
