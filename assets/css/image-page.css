@@ -42,17 +42,18 @@ body {
   font-size: 16px;
 }
 
-.img2020 {
+/* .img2020 {
+  background-color: #000000;
   float: right;
   padding: 10px 20px 0 0;
   height: 100px;
   transition: all 2s ease-in ;
-}
+} */
 
 marquee {
   height: 60px;
+  /* background-image: url(/assets/img/blueMtn.JPG); */
   background-image: url(/assets/img/mountain-landscapes-red.jpg);
-  /* background-image: url(/img/mountain-landscapes.jpg); */
   background-size: contain;
   background-color: black;
   border-bottom: 2px solid rgba(255,255,255,.4);
@@ -74,21 +75,6 @@ marquee img{
   padding: 5px 15px 0 5px;
   }
   
-.transbox {
-  align-content: center;
-  display: flexbox;
-  background-color: #000000;
-  border-radius: 10px;
-  color: rgb(138, 155, 155);
-  float: 50%;
-  margin: 30px;
-  padding: 5px 15px 0 5px;
-  opacity: .7;
-}
-
-.transbox p {
-  color: #f2f2f2;
-}
 
 .container-2 {
   align-items: center;
@@ -115,39 +101,48 @@ marquee img{
 /**********************
 ** CSS - Image Pages **
 **********************/
-/* Header - Sticky*/
-.nav-header{
-  background-color: #000000;
-  /* border-bottom: 2px solid rgba(255,255,255,.4); */
-  height: min-content;
-  position: sticky;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.imagePage-container-1 {
-  /* border: 3px solid #B03D42; */
-  /* border-bottom: 2px solid rgba(255,255,255,.4); */
-  background: #000000;
-  color: rgba(255,255,255,.4);
-  font-family: sans-serif;
-  height: fit-content;
-  padding: 5px;
-  margin: 10px;
-  transition: all 2s ease-in-out ;
-}
-
-.imagePage-container-1 h1 {
+/* Header*/
+.flex-container-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 2s ease-in ;
+  align-content: stretch;
+  height: 8em;
+  background-image: url(/assets/img/indexBackgroundStatic.JPG);
+  background-size: cover;
+  /* background-color: yellowgreen; */
+  /* border: 2px solid yellowgreen; */
+  margin: 0;
 }
-
+.header-image {
+  font-size: 1em;
+  color: rgb(167, 32, 32);
+  width: 100%;
+  height: 7em;
+  margin: 0;
+  /* border: 5px dotted pink; */
+}
+.header-one {
+  align-content: center;
+  /* border: 5px dotted #B2D2EB; */
+}
+.header-one h1{
+  color: #B2D2EB;
+  padding: 0 0 0 10em;
+  /* border: 5px solid rgb(146, 13, 106); */
+}
+.header-two {
+  flex-basis: 200px;
+  background-image: url(/assets/img/2020-4.jpg);
+  /* border: 5px solid firebrick; */
+  margin: 0 1em 0 0;
+}
+.header-three {
+  flex-basis: 300px;
+  background-image: url(/assets/img/2020.jpg);
+  /* border: 5px solid firebrick; */
+  margin: 0 1em 0 0;
+}
 .imagePage-container-2 {
   /* border: 2px solid olive; */
   display: flex;
@@ -194,7 +189,7 @@ marquee img{
   width: 100%;
   height: min-content;
   z-index: 1;
-  /* padding: 5px 0 0 5px; */
+  padding: 10px 0 5px 0;
   /* margin: 15px 0 0 0; */
 }
 
@@ -390,13 +385,19 @@ img.hover-shadow {
 **     Responsive     **
 ***********************/
 @media screen and (max-width: 1410px) {
-  
+  .back-to-top {
+    display: none;
+  }
   .container-1 h1{
     font-size: 30px
   }
   .container-1 .img2020 {
     height: 75px;
   }
+  .header-one, .header-two{
+    display: none;
+  }
+
   /* .narrative {
     display: none;
     float: none;
