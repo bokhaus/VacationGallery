@@ -191,8 +191,14 @@ marquee img{
   margin: 0 0 0 140px;
   margin: 0 0 0 15%;
 }
+
 .today {
   color: #B2D2EB;
+  /* color: #B03D42; */
+  text-align: left;
+}
+.today h5{
+  color: rgb(84, 87, 87);
   /* color: #B03D42; */
   text-align: left;
 }
