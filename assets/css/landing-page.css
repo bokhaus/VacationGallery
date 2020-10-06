@@ -229,11 +229,14 @@ section img {
     .nav-select {
         width: 500%;
     }
+    .flex-container-header-landing {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 644px) {
     #text {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     .all-headers {
         font-size: 2em;
