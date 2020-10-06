@@ -135,6 +135,7 @@ marquee img{
   flex-basis: 200px;
   background-image: url(/assets/img/2020-4.jpg);
   /* border: 5px solid firebrick; */
+  border-radius: 5%;
   margin: 0 1em 0 0;
 }
 .header-three {
